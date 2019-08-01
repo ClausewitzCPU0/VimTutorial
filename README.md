@@ -932,7 +932,7 @@ https://github.com/scrooloose/nerdtree
 
 启动时自动打开nerdtree： `autocmd vimenter * NERDTree`
 
-也可以手动打开 :DERDTree
+也可以手动打开 :NERDTree
 
 在vimrc中增加：
 
