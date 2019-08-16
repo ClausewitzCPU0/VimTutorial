@@ -30,7 +30,7 @@ sudo apt install libncurses5-dev libgnome2-dev libgnomeui-dev \
 # 2. remove vim 
 sudo apt remove vim vim-runtime gvim
 sudo apt remove vim-tiny vim-common vim-gui-common vim-nox
-
+# cd ~ && rm -rf .vim .vimrc .vimrc.bundles && cd -
 
 # if pyenv is installed, set the python command to point at the system python with:
 # pyenv shell system
@@ -46,15 +46,14 @@ cd vim
             --enable-rubyinterp=yes \
             --enable-python3interp=yes \
             --with-python3-command=python3.5 \
-            --with-python3-config-dir=/usr/lib/python3.5/config-3.5m-x86_64-linux-gnu
- \
+            --with-python3-config-dir=/usr/lib/python3.5/config-3.5m-x86_64-linux-gnu \
             --enable-perlinterp=yes \
             --enable-luainterp=yes \
             --enable-gui=gtk2 \
             --enable-cscope \
 	   --prefix=/usr/local
 	   
-make VIMRUNTIMEDIR=/usr/local/share/vim/vim81  # 此处视版本而定
+# make VIMRUNTIMEDIR=/usr/local/share/vim/vim81  # 此处视版本而定
 
 # 4. use make to install
 cd ~/vim
@@ -1658,4 +1657,8 @@ https://www.jianshu.com/p/5aaae8f036c1
 https://www.cnblogs.com/berthua/p/4667983.html
 
 
+
+## 附4：Python第三方库补全
+
+https://github.com/ycm-core/YouCompleteMe#python-semantic-completion
 
