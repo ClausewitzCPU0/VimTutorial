@@ -1,0 +1,34 @@
+" win系统放置在 C:\Users\用户名
+" 文件名为_ideavimrc
+"修改完重启pycharm
+
+" 定义leader键，注意所有用到<leader>的设置要写在这句之后
+let mapleader = ','
+
+" 映射idea常用快捷键
+" 程序debug快捷键 zd
+:nnoremap zd :action Debug<CR>
+" 程序运行快捷键 zr
+:nnoremap zr :action Run<CR>
+
+" Vim基础键位映射
+" 显示当前的模式
+set showmode
+" 共享系统粘贴板
+set clipboard=unnamed
+" Quit insert mode
+inoremap jj <Esc>
+inoremap jk <Esc>
+inoremap kk <Esc>
+
+" Vim插件模拟
+" surround
+set surround
+" multiple-cursors
+set multiple-cursors
+" easyMotion 模拟，额外依赖pycharm插件：AceJump,IdeaVim-EasyMotion
+set easymotion
+" 增加映射
+nmap ss <Plug>(easymotion-s2)
+" 注释插件模拟
+set commentary
