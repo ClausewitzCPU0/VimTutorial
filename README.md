@@ -1,3 +1,9 @@
+
+[latest: vim-journey](https://github.com/ClausewitzCPU0/vim-journey)
+
+# DEPRECATED
+# DEPRECATED
+
 # Vim学习笔记
 
 原教程：玩转Vim 从放弃到爱不释手 https://www.imooc.com/learn/1129
